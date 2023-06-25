@@ -1,0 +1,320 @@
+/* defaults*/
+body{
+    margin:0;
+}
+
+div.section-divider{
+    padding:15px;
+}
+
+#hero{
+    background-image: url("./Assets/Images/backdrop.jpg");
+    background-size: cover;
+    height:75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.title{
+    color:#352F20;
+    
+}
+
+#intro{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.intro-text{
+    text-align: center;
+    width: 60%;
+    color:#666666;
+}
+
+.intro-btn{
+    padding: 10px;
+    background-color: #5F9EA0;
+    border-radius: 30px;
+    border: none;
+}
+
+.intro-btn:hover{
+    background-color: #E52B50;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+#about-me{
+    background-color: #E8E8E0;
+    color:#352F20;
+}
+
+div.about-me-head{
+    text-align: center;
+}
+
+div.about-me-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /*justify-content: center;
+    align-items: center;*/
+    gap:10px;
+    padding: 20px;
+}
+
+img.skills-img{
+    display: block;
+    margin: auto;
+}
+
+#contact{
+    text-align: center;
+}
+
+div.contact-head > h1{
+    margin-top: 15px;
+}
+
+#footer{
+    background-color: #FADCD9;
+    text-align: center;
+    color:#666666;
+    padding: 20px;
+}
+
+/* for mobile screens */
+@media (min-width:320px) and (max-width:480px){
+
+    .title-h1{
+        margin:0;
+        font-size:2rem;
+    }
+
+    div.intro-img > img{
+        border-radius: 50%;
+        height: 100px;
+        width:100px;
+    }
+
+    div.intro-text h2.intro-h2{
+        margin:7px;
+    }
+
+    .about-me-head > h2{
+        font-size: 2rem;
+        margin-bottom:15px;
+        padding-top: 12px;
+    }
+
+    div.about-me-grid > img{
+        width:225px;
+    }
+
+    div.contact-head > h1{    
+    font-size: 1.5rem;
+    }
+}
+
+/* for ipads and tablets */
+@media (min-width:481px) and (max-width:768px){
+    
+    .title-h1{
+        margin:0;
+        font-size:2rem
+    }
+
+    div.intro-img > img{
+        border-radius: 50%;
+        height: 125px;
+        width:125px;
+    }
+
+    .intro-text h2.intro-h2{
+        font-size: 2rem;
+        margin:7px;
+    }
+
+    .intro-text p.intro-p{
+        font-size: 1.15rem;
+
+    }
+
+    .about-me-head > h2{
+        font-size: 2rem;
+        padding-top: 15px;
+    }
+
+    div.about-me-grid > p{
+        font-size: 1.05rem;
+        width:75%;
+    }
+
+    div.about-me-grid > img{
+        width:250px;
+    }
+
+    div.contact-head > h1{    
+        font-size: 1.65rem;
+        }
+}
+
+/* for laptops */
+@media (min-width:769px) and (max-width:1024px){
+   
+    .title-h1{
+        margin:0;
+        font-size:2.5rem;
+    }
+
+    div.intro-img > img{
+        border-radius: 50%;
+        height: 150px;
+        width:150px;
+    }
+
+    .intro-text h2.intro-h2{
+        font-size: 2rem;
+        margin:7px;
+    }
+
+    .intro-text p.intro-p{
+        font-size: 1.15rem;
+
+    }
+
+    .intro-btn > a{
+        font-size:1rem;
+    }
+
+    .about-me-head > h2{
+        font-size: 2.25rem;
+        padding-top: 17px;
+    }
+
+    div.about-me-grid > p{
+        font-size: 1.25rem;
+        width:75%;
+    }
+
+    div.about-me-grid > img{
+        width:275px;
+    }
+
+    div.contact-head > h1{    
+        font-size: 1.75rem;
+    }
+
+    div.contact-head > p{
+        font-size: 1rem;
+    }
+}
+
+/* for desktops */
+@media (min-width:1025px) and (max-width:1200px){
+
+    .title-h1{
+        margin:0;
+        font-size: 2.5rem;
+    }
+
+    div.intro-img > img{
+        border-radius: 50%;
+        height: 200px;
+        width:200px;
+    }
+
+    .intro-text h2.intro-h2{
+        font-size: 2rem;
+        margin:7px;
+    }
+
+    .intro-text p.intro-p{
+        font-size: 1.15rem;
+
+    }
+
+    .intro-btn > a{
+        font-size:1rem;
+    }
+
+    .about-me-head > h2{
+        font-size: 2.5rem;
+        padding-top: 17px;
+    }
+
+    div.about-me-grid > p{
+        font-size: 1.25rem;
+        width:75%;
+    }
+
+    div.about-me-grid > img{
+        width:275px;
+    }
+
+    div.contact-head > h1{    
+        font-size: 1.85rem;
+    }
+
+    div.contact-head > p{
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width:1201px){
+
+    .title-h1{
+        margin:0;
+        font-size: 3rem;
+    }
+
+    div.intro-img > img{
+        border-radius: 50%;
+        height: 200px;
+        width:200px;
+    }
+
+    .intro-text h2.intro-h2{
+        font-size: 2.15rem;
+        margin:7px;
+    }
+
+    .intro-text p.intro-p{
+        font-size: 1.25rem;
+
+    }
+
+    .intro-btn > a{
+        font-size:1rem;
+    }
+
+    .about-me-head > h2{
+        font-size: 2.5rem;
+        padding-top: 17px;
+    }
+
+    div.about-me-grid > p{
+        font-size: 1.25rem;
+        width:75%;
+    }
+
+    div.about-me-grid > img{
+        width:300px;
+    }
+
+    div.contact-head > h1{    
+        font-size: 1.95rem;
+    }
+
+    div.contact-head > p{
+        font-size: 1.15rem;
+    }
+}
